@@ -31,7 +31,7 @@ whitelist-add:
 
 .PHONY: players-online
 players-online:
-	@python3 -c 'from mcstatus import MinecraftBedrockServer; print(MinecraftBedrockServer.lookup("127.0.0.1:19132").status().players_online)'
+	@python3 -c 'from mcstatus import MinecraftBedrockServer; print(MinecraftBedrockServer.lookup("127.0.0.1:19134").status().players_online)'
 
 .PHONY: dump-logs
 dump-logs:
