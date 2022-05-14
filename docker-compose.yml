@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+    server:
+        image: itzg/minecraft-bedrock-server:latest
+        tty: true
+        stdin_open: true
+        restart: always
+        ports:
+            - '0.0.0.0:19133:19132/udp'
+        environment:
+            TZ: 'Asia/Tokyo'
+            EULA: 'TRUE'
+            VERSION: 'LATEST'
+            UID: 1000
+            GID: 1000
+        volumes:
+            - './data:/data'
+
