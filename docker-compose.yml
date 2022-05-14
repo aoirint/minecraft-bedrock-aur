@@ -6,7 +6,7 @@ services:
         stdin_open: true
         restart: always
         ports:
-            - '0.0.0.0:19133:19132/udp'
+            - '0.0.0.0:19134:19132/udp'
         environment:
             TZ: 'Asia/Tokyo'
             EULA: 'TRUE'
